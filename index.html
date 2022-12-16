@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sreefy - Where Your Faves Music Lives" />
+    <meta
+      property="og:image"
+      content="http://sreefy.herokuapp.com/Assets/favicon.png"
+    />
+    <meta
+      property="twitter:image"
+      content="http://sreefy.herokuapp.com/Assets/favicon.png"
+    />
+    <title>Sreefy</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="./Assets/site.json" />
+    <link rel="shortcut icon" type="image/jpg" href="./Assets/favicon.png" />
+    <style>
+      body {
+        background: linear-gradient(-45deg, #ff7348, #ff2176, #23a6d5, #08f2bc);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        height: 100vh;
+        font-family: "Courier New", Courier, monospace;
+        overflow: scroll;
+      }
+    </style>
+    <script
+      src="https://kit.fontawesome.com/b69c913984.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body id="body">
+    <div id="mySidenav" class="sidenav">
+      <div class="site_logo">
+        <img src="./Assets/favicon.png" alt="logo" id="site_logo" />
+      </div>
+      <a href="javascript:void(0)" class="closebtn" id="close_nav">&times;</a>
+      <a href="/home.html" class="active_page">Home</a>
+      <a href="/global.html">Global</a>
+      <a href="/india.html">India</a>
+      <a href="/local.html">Local</a>
+      <a href="/trending.html">Trending</a>
+      <a href="/liked.html">Liked</a>
+      <a href="/history.html">History</a>
+      <a href="/feedback.html">Feedback</a>
+      <a href="/rateus.html">Rate us</a>
+      <a href="/signin.html">Sign in </a>
+      <div class="nav_bottom">
+        <a href="/references.html">
+          <i class="fas fa-info-circle"></i>
+        </a>
+        <a href="https://github.com/rahulreddy-001/Sreefy" target="_blank">
+          <i class="fa-sharp fa-solid fa-code" height="20px"></i>
+        </a>
+        <a id="share">
+          <i class="fa-sharp fa-solid fa-share"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="header">
+      <span style="font-size: 30px; cursor: pointer" id="open_nav"
+        >&#9776;</span
+      >
+      <div class="nav_bar">
+        <input type="text" class="search_text" placeholder="Search" />
+        <button class="search_btn" type="btn">Search</button>
+      </div>
+    </div>
+    <div class="song_name">
+      <h3 class="song_name_head">Trending now</h3>
+    </div>
+    <table id="songs"></table>
+    <audio id="currentSong"></audio>
+    <div class="controls">
+      <img src="./Assets/tolike.png" alt="like" id="like" />
+      <img src="./Assets/backward-solid.svg" alt="backward" id="backward" />
+      <div class="music_state">
+        <img src="./Assets/play-solid.svg" alt="play" id="play" />
+      </div>
+      <img src="./Assets/forward-solid.svg" alt="forward" id="forward" />
+    </div>
+    <div class="alert alert-success" role="alert">Added to Liked Songs</div>
+  </body>
+  <script src="./script.js"></script>
+</html>
